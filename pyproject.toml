@@ -1,0 +1,14 @@
+[project]
+name = "chipmunk"
+version = "0.1.0"
+description = "Crop raster chips from points — CBERS4, WMS masks, dataset assembly"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31",
+]
+
+[project.scripts]
+chipmunk = "chipmunk.cli:main"
+
+[tool.uv.sources]
